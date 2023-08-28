@@ -12,10 +12,16 @@ struct VS_OUTPUT
     float2 uv : TEXCOORD;
 };
 
+cbuffer TransformData : register(b0)
+{
+    float4 offset;
+}
+
+
 VS_OUTPUT VS(VS_INPUT input)
 {
     VS_OUTPUT output;
-    output.position = input.position;
+    output.position = input.position + offset;
     // output.color = input.color;
     output.uv = input.uv;
     
