@@ -28,8 +28,15 @@ private:
 private:
 	void CreateSRV();				// Shader Resouce View
 
+	// [¼½¼Ç1] Constant Buffer
 private:
-	void CreateConstantBuffer();	// Constant Buffer
+	void CreateConstantBuffer();
+	
+	// [¼½¼Ç1] ´ú Áß¿äÇÑ 3ÃÑ»ç
+private:
+	void CreateRasterizerState();
+	void CreateSamplerState();
+	void CreateBlendState();
 
 private:
 	void LoadShaderFromFile(const wstring& path, const string& name, const string& version, ComPtr<ID3DBlob>& blob);
@@ -69,4 +76,9 @@ private:
 private:
 	TransformData					_transformData;
 	ComPtr<ID3D11Buffer>			_constantBuffer		= nullptr;
+
+private:
+	ComPtr<ID3D11RasterizerState>	_rasterizerState	= nullptr;
+	ComPtr<ID3D11SamplerState>		_samplerState		= nullptr;
+	ComPtr<ID3D11BlendState>		_blendState			= nullptr;
 };

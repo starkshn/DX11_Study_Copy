@@ -2,12 +2,12 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>D:\DirecX11\DX11_Projects\GameCoding_Test\Client\Binaries\DX11.exe</FullPath>
+      <FullPath>D:\DirecX11\DX11_Projects\GameCoding_Repeat\Client\Binaries\DX11.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles>
     <ContentFile>
-      <FullPath>D:\DirecX11\DX11_Projects\GameCoding_Test\Client\Binaries\Default.cso</FullPath>
+      <FullPath>D:\DirecX11\DX11_Projects\GameCoding_Repeat\Client\Binaries\Default.cso</FullPath>
     </ContentFile>
   </ContentFiles>
   <SatelliteDlls />

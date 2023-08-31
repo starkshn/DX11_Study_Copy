@@ -1,15 +1,18 @@
+
 struct VS_INPUT
 {
     float4 position : POSITION;
-    // float4 color : COLOR;
     float2 uv : TEXCOORD;
+    
+    // float4 color : COLOR;
 };
 
 struct VS_OUTPUT
 {
     float4 position : SV_POSITION;
-    // float4 color : COLOR;
     float2 uv : TEXCOORD;
+    
+    // float4 color : COLOR;
 };
 
 cbuffer TransformData : register(b0)
@@ -17,13 +20,13 @@ cbuffer TransformData : register(b0)
     float4 offset;
 }
 
-
 VS_OUTPUT VS(VS_INPUT input)
 {
     VS_OUTPUT output;
     output.position = input.position + offset;
-    // output.color = input.color;
     output.uv = input.uv;
+    
+    // output.color = input.color;
     
     return output;
 }
